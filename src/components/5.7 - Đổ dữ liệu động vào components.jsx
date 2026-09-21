@@ -1,4 +1,7 @@
-function Userprofiles() {
+
+
+
+export function Userprofiles() {
     //logic
     const user = {
         name: "bui viet khoa",
@@ -9,8 +12,9 @@ function Userprofiles() {
 
     }
     // UI-jsx
+    // 5.8 - Thêm css inline object
     return (
-        <div>
+        <div style={{ background: "#f5f5f5", borderRadius: "20px", }}>
             <h3>{user.name}</h3>
             <img className="thumbnail" src={user.avatarUrl} alt="" />
             <p>{user.state}</p>
@@ -29,4 +33,3 @@ function Userprofiles() {
 
 
 }
-export { Userprofiles };
