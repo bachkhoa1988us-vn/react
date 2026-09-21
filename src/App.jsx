@@ -5,7 +5,8 @@ import viteLogo from './assets/vite.svg'
 // import './App.css'
 import './components/Userprofile.css'
 import { Headeṛ, Sidebar, Footer } from './components/5.5 - Xuất và nhập component theo tên'
-import { Userprofile } from './components/5.6 - 3 quy tắc tạo giao diện trong component'
+// import { Userprofile } from './components/5.6 - 3 quy tắc tạo giao diện trong component'
+import { Userprofiles } from './components/5.7 - Đổ dữ liệu động vào components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
       <h3>react</h3>
-      <Userprofile />
+      {/* <Userprofile />  */}
+      <Userprofiles />
     </>
 
   )
