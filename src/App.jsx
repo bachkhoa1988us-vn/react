@@ -7,15 +7,15 @@ import './components/Userprofile.css'
 import { Headeṛ, Sidebar, Footer } from './components/5.5 - Xuất và nhập component theo tên'
 // import { Userprofile } from './components/5.6 - 3 quy tắc tạo giao diện trong component'
 import { Userprofiles } from './components/5.7 - Đổ dữ liệu động vào components'
+import { Child } from './components/child'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const [count, setCount] = useState(0)
+  const userprofile = { name: "khoa", birthday: "2001", state: "florida" }
   return (
     <>
-      <h3>react</h3>
-      {/* <Userprofile />  */}
-      <Userprofiles />
+
+      < Child user={userprofile} />
     </>
 
   )
